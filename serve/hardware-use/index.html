@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+  <head>
+    <title>Control your hardware use (CPU, GPU) with Keras – Adrián Núñez-Marcos – PhD student at MORElab, University of Deusto</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="PhD student at MORElab, University of Deusto">
+    <meta property="og:description" content="PhD student at MORElab, University of Deusto" />
+    
+    <meta name="author" content="Adrián Núñez-Marcos" />
+
+    
+    <meta property="og:title" content="Control your hardware use (CPU, GPU) with Keras" />
+    <meta property="twitter:title" content="Control your hardware use (CPU, GPU) with Keras" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Adrián Núñez-Marcos - PhD student at MORElab, University of Deusto" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <!--<a href="/" class="site-avatar"><img src="https://morelab.deusto.es/media/persons/adrian-nunez-marcos.jpg" /></a>-->
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Adrián Núñez-Marcos</a></h1>
+            <p class="site-description">PhD student at MORElab, University of Deusto</p>
+          </div>
+
+          <nav>
+	    <a href="/">About me</a>
+            <a href="/blog">Blog</a>
+	    <a href="/news">News</a>
+	    <a href="/research">Research</a>
+	    <!--<a href="/publications-and-conferences">Publications and Conferences</a>-->
+	    <a href="/miscellany">Misc</a>  
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="cuerpo container">
+      <article class="post">
+  <h1 style="font-size:180%;">Control your hardware use (CPU, GPU) with Keras</h1>
+  <div class="date" style=" text-decoration: normal; font-size: 90%; margin-bottom: 1cm; ">
+    28 Sep 2017
+  </div>
+
+  <div class="entry">
+    <p>In Deep Learning projects, where we usually occupy a great amount of memory, I found very useful to have a way of measuring my use of the space in RAM and VRAM (GPU memory). Here I will provide some tools to do this, although they may be better options I found that these solutions are easy to put in practice.</p>
+
+<p>Theano version: 0.8.2. Tensorflow version: 0.12.</p>
+
+<h2 id='ram_memory'>RAM memory</h2>
+
+<p>To control the occupied space in RAM we make use of the &#8220;psutil&#8221; python package, you can install it via pip:</p>
+<div>
+  <pre><code class='ruby'>pip install psutil</code></pre>
+</div>
+<p>Then, we will create a function where we allocate memory in RAM. In my case, I created a numpy ndarray. The first line of the code is mandatory, then you insert your code and finally we obtain the RAM use. I formatted the amount so that it is human-readable and presented it in GB.</p>
+<div>
+  <pre><code class='python'>import psutil
+import numpy as np
+
+def foo():
+     p = psutil.Process()
+     x = np.ones((1200,960,3))
+     values = psutil.virtual_memory()
+     used = values.used &gt;&gt; 20
+     print('RAM: {}'.format(float(used/1000.0)))
+
+foo()
+&gt;&gt;&gt; RAM: 0.254</code></pre>
+</div>
+<p>With these lines we will have the amount of RAM employed printed in the screen.</p>
+
+<h2 id='vram_memory'>VRAM memory</h2>
+
+<p>VRAM is the memory inside a GPU where the neural network model and data mini-batches are stored. We can see the occupied space using the command &#8220;nvidia-smi&#8221; in a terminal. However, by default both Theano and Tensorflow preallocate memory. Thus, we do not know the real space that we are using.</p>
+
+<h4 id='solution_in_theano'>Solution in Theano</h4>
+
+<p>Go to the &#8220;theanorc&#8221; file and add the following:</p>
+<div>
+  <pre><code class='ruby'>[lib]
+cnmem = 0</code></pre>
+</div>
+<p>With this change applied we will see that now we can actually measure the real space occupied by our model and data.</p>
+
+<h4 id='solution_in_tensorflow'>Solution in Tensorflow</h4>
+
+<p>For tensorflow the solution is to add this at the start of your project:</p>
+<div>
+  <pre><code class='python'>import tensorflow as tf
+import keras.backend.tensorflow_backend as K
+
+config = tf.ConfigProto()
+config.gpu_options.allow_growth=True
+sess = tf.Session(config=config)
+K.set_session(sess)</code></pre>
+</div>
+<h4 id='checking_vram'>Checking VRAM</h4>
+
+<p>The nvidia-smi will show you the use of VRAM in a single moment, but it&#8217;s more interesting to actually have it in real-time. I found two ways of doing this:</p>
+
+<ul>
+<li>watch nvidia-smi: refreshes the output every 2 seconds, nice for monitoring.</li>
+
+<li>nvidia-smi -l 1: outputs appear one after another. I would redirect the output to a file, like &#8220;nvidia-smi -l 1 &gt; output.txt&#8221;, so that you have all the possible outputs to be checked later in a single file. The value of the parameter &#8220;l&#8221; indicates the frequency for printing the output, in this case 1 second.</li>
+</ul>
+  </div>
+
+  
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+var disqus_config = function () {
+this.page.url = 'https://adriannunez.github.io/';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//https-adriannunez-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:adrian.nunez@deusto.es"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/AdrianNunez"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/anunezmarcos"><i class="svg-icon linkedin"></i></a>
+
+
+<a href="https://www.twitter.com/anunezmarcos"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-91629881-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/hardware-use/',
+		  'title': 'Control your hardware use (CPU, GPU) with Keras'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>
