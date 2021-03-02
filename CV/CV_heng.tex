@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\usepackage{zh_CN-Adobefonts_external} 
+\usepackage{linespacing_fix}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape  Heng Guo} \\ \vspace{4pt}
+    \small 070-1322-7890 $|$ \href{mailto:heng.guo@ist.osaka-u.ac.jp}{\underline{heng.guo@ist.osaka-u.ac.jp}} $|$ 
+    \href{https://gh-home.github.io/}{\underline{Homepage}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Electronic Science and Technology of China }{Chengdu, China}
+      {Bachelor of Electronic Engineer}{Aug. 2015 -- Sep. 2011}
+  \resumeSubheading
+      {University of Electronic Science and Technology of China }{Chengdu, China}
+      {Master of Signal Processing}{Aug. 2018 -- Sep. 2015}
+   \resumeSubheading
+ 		{Osaka University}{Osaka, Japan}
+ 		{Doctor of Computer Science}{Present -- Sep. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Assistant}{Oct. 2018 -- Present}
+      {Osaka University}{Osaka, Japan}
+      
+% -----------Multiple Positions Heading-----------
+    \resumeSubheading
+     {Research Intern}{June 2016 -- Jan. 2017}
+	{AI lab of Qihoo 360 Technology Co. Ltd.}{Beijing, China}
+     \resumeItemListStart
+		\resumeItem{Propose a real-time video stabilization algorithm for user-captured videos with 0.5s delay.}
+		\resumeItem{Implement an android application for real-time video stabilization.}
+     \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Honors}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {Excellent Master Thesis of UESTC (Top 3\%)}{June 2018}
+   
+         \resumeProjectHeading
+   {Excellent Postgraduate of UESTC (Top 6\%))}{June 2018}
+         \resumeProjectHeading
+   {National Scholarship of China(Top 2\%))}{Oct. 2017}
+         \resumeProjectHeading
+   {Academic Scholarship of UESTC (Top 10\%)}{2015 \& 2016 \& 2017}
+         \resumeProjectHeading
+   {Excellent Graduate of UESTC (Top 7\%)}{Sep. 2015}
+         \resumeProjectHeading
+   {The 1st Prize of National College Student Information Security Contest}{July 2014}
+            \resumeProjectHeading
+   {The 2nd Prize of National Undergraduate Electronics Design Contest}{Sep. 2013}
+   \resumeProjectHeading
+   {People's Scholarship (Top 15\%)}{2011 \& 2012 \& 2013}
+   \resumeProjectHeading
+   {Outstanding Individual in Social Practice}{Sep. 2012}
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Publication}
+%\renewcommand\labelenumi{(\theenumi)}
+\begin{enumerate}[label={[\arabic*]}]
+	\item Guo Heng, et al. ``Multispectral Photometric Stereo for Spatially-Varying Spectral Reflectances: A well posed problem?" IEEE Conference on Computer Vision and Pattern Recognition. (CVPR 2021). 
+	\item Guo Heng, et al. ``Self-calibrating Near-light Photometric Stereo under Anisotropic Light Emission." Meeting on Image Recognition and Understanding (MIRU 2020).  (\textbf{Best student paper}) 
+	\item Guo Heng, et al. ``Joint video stitching and stabilization from moving cameras." IEEE Transactions on Image Processing 25.11 (2016): 5491-5503.
+	\item Guo Heng, et al. ``View-consistent meshflow for stereoscopic video stabilization." IEEE Transactions on Computational Imaging 4.4 (2018): 573-584.
+	\item Guo Heng, et al. ``Joint bundled camera paths for stereoscopic video stabilization." IEEE International Conference on Image Processing (ICIP 2016). (\textbf{Oral})
+\end{enumerate}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Program language}{: Java, Python, C/C++} \\
+     \textbf{Certificacts}{: TOEFL (95), CET-6 (527)} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
