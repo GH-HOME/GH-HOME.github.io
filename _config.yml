@@ -18,7 +18,7 @@ avatar: images/pic.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: henguooo@gmail.com
+  email: heng.guo@ist.osaka-u.ac.jp
   facebook:
   flickr:
   github: GH-HOME
@@ -41,7 +41,7 @@ google_analytics: UA-91629881-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://GH-HOME.github.io/
+url: https://hengguo.github.io/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
