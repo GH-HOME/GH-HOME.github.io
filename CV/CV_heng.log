@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.26)  2 MAR 2021 15:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.26)  19 MAY 2021 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -337,7 +337,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 122.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 122.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
 
 
 Package Fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -348,23 +348,23 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 {d:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
 
 (./CV_heng.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `CV_heng.out' has not changed.
 (rerunfilecheck)             Checksum: 1D0B66A349AAF7C641DB88798A11EB73;217.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 6674 strings out of 492623
- 96270 string characters out of 6133289
- 207200 words of memory out of 5000000
+ 6676 strings out of 492623
+ 96282 string characters out of 6133289
+ 208200 words of memory out of 5000000
  10510 multiletter control sequences out of 15000+600000
  9232 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -376,10 +376,10 @@ ist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2019/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2019/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy6.pfb><d:/texlive/2019/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb>
-Output written on CV_heng.pdf (1 page, 100406 bytes).
+Output written on CV_heng.pdf (1 page, 100912 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
