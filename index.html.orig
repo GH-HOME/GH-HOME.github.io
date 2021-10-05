@@ -1,0 +1,160 @@
+
+
+<html>
+    <head>
+        <title>Heng's Homepage </title>
+	</head>
+    <body style="font-size: 24px;">
+		<table border=0 width=1200px align=center>
+			<tr>
+      			<td valign="top">
+                <img img width=170 src="images/logo_osaka.png">
+        		<br>
+        <table >
+            <tr>
+                <td>
+				<font face="helvetica, ariel, 'sans serif'" size="6"> 
+					<strong>Heng Guo<br>
+                	</strong><strong>郭亨</strong><br>
+                <br>
+				</font>
+				<font face="helvetica, ariel, 'sans serif'" size="4"> 
+					PhD Student
+				<br>	
+				<br>
+					Matsushita lab	
+				<br>
+					Graduate School of Information Science and Technology
+				<br>
+					Osaka University
+				<br>
+				<br>
+					Email: heng.guo [at] osaka-u.ac.jp
+				<br>
+					<a href="https://github.com/GH-HOME">[GITHUB] </a>  
+					<a href="CV/CV_heng.pdf">    [CV] </a> 
+					<a href="https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AJsN-F5heF8L-qMhjxAo6o2tbLndAtQ9I1oj0TlCmTe2EP0C8RxEg9-inIZhyzvQ_WCVHzWUsymOWie8WAseZZT_O2RY1NgpYtYNp24rNMEyRgyL93YVpts&user=HKu6gF4AAAAJ">    [Google Scholar] </a> 
+				<br>
+				<br><br>
+                </font>
+              </td>
+                <td width = "55%" align="right">
+                  <img height=300 src="images/mypic.jpg" border="2">
+              	</td>
+            </tr>
+        </table>
+        <p>
+        <hr size="1" align="left" noshade>
+        <p>
+
+        <font face="helvetica, ariel, 'sans serif'">
+        <h2>About Me</h2>
+        I am a third-year PhD student in the Multimedia Engineering department at Osaka University, where I am advised by <a href="http://www-infobiz.ist.osaka-u.ac.jp/en/member/matsushita/">Prof. Yasuyuki Matsushita</a>. Previously I obtained my Master and Bachelor degree in 2018 and 2015, both from University of Electronic Science and Technology of China (<strong><a href="http://www.uestc.edu.cn/">UESTC</a></strong>). under the supervision of Prof. Bing Zeng and <a href="http://www.liushuaicheng.org">Prof. Shuaicheng Liu</a>.
+
+    	<h2>News</h2>
+			<li><strong>[2021/06]</strong> <span style="background-color:yellow">Seeking for job opportunities!</span> </li>
+            <li><strong>[2021/03]</strong> One paper accepted as TPAMI 2021! </li>
+            <li><strong>[2021/03]</strong> One paper accepted as CVPR 2021! </li>
+            <li><strong>[2020/03]</strong> One paper accepted as Best Student Paper of MIRU 2020! </li>
+            <li><strong>[2018/10]</strong> Come to Matsusita lab in Osaka University, as a PhD student supervised by <a href="http://www-infobiz.ist.osaka-u.ac.jp/en/member/matsushita/">Prof. Yasuyuki Matsushita</a>. </li>
+            <li><strong>[2018/08]</strong> Come to Peking University, as a reserach assitant of <a href="http://alumni.media.mit.edu/~shiboxin/index.html">Prof. Boxin Shi</a>. </li>
+
+
+        <h2>Publications </h2>
+        <font face="helvetica, ariel, 'sans serif'">
+            <table border="0" cellpadding="20" cellspacing="3" >
+
+                <tr>
+                    <td>
+                        <img width=320 src="project/CVPR2021/teaser.png" loop=infinite border="3">
+                    </td>
+                    <td align="left"><strong>Patch-based Uncalibrated Photometric Stereo under Natural Illumination? </strong> <br>
+                      <strong>Heng Guo</strong>, Zhipeng Mo, <a href="http://alumni.media.mit.edu/~shiboxin/">Boxin Shi</a>, Feng Lu, Sai-Kit Yeung, Ping Tan, <a href="http://www-infobiz.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>. <br>
+                        In <em>IEEE Transactions on Pattern Analysis and Machine Intelligence  </em> (<strong>TPAMI 2021</strong>). <br>
+						[<a href="project/TPAMI21/paper.pdf">Paper</a>]
+                    </td>
+                </tr>
+
+				<tr>
+                    <td>
+                        <img width=320 src="project/CVPR2021/Thumbnail.gif" loop=infinite border="3">
+                    </td>
+                    <td align="left"><strong>Multispectral Photometric Stereo for Spatially-Varying Spectral Reflectances: A well posed probelm? </strong> <br>
+                      <strong>Heng Guo</strong>, Fumio Okura, <a href="http://alumni.media.mit.edu/~shiboxin/">Boxin Shi</a>, Takuya Funatomi, Yasuhiro Mukaigawa, <a href="http://www-infobiz.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>. <br>
+                        In <em>IEEE Conference on Computer Vision and Pattern Recognition  </em> (<strong>CVPR 2021</strong>). <br>
+						[<a href="project/CVPR2021/paper.pdf">Paper</a>]
+                        [<a href="https://youtu.be/jot_BPFUJko">Video</a>]
+<<<<<<< HEAD
+                        [<a href="https://docs.google.com/presentation/d/1QMHX1p09MR-1yL2aRZbgS7yI_9gqaMKG/edit?usp=sharing&ouid=101921177717540150678&rtpof=true&sd=true">Slide</a>]
+=======
+                        [<a href="https://doc-08-3k-docs.googleusercontent.com/docs/securesc/8nk6v8dfdth8lvha8ofaoa2ks5r4sg1l/h7qnj209dg4pt7onv2cjl9essdbm0ugk/1630936575000/05184680287828355585/05184680287828355585/1RouZBUe5RDMA0XxLvcoLZepQxULkppMd?e=download&authuser=0&nonce=qi5kr9hr4i8gi&user=05184680287828355585&hash=1tpgvsi9p7ke0lqor7o5n37qnud7d6cm">Slide</a>]
+>>>>>>> b00bf60378dc6b544fd7d8932bb0ad088f77ddeb
+                        [<a href="project/CVPR2021/poster.pdf">Poster</a>]
+                    </td>
+                </tr>
+				
+                <tr>
+                    <td>
+                        <img width=320 src="images/MIRU2020.png" border="3">
+                    </td>
+                    <td align="left"><strong>Self-calibrating Near-light Photometric Stereo under Anisotropic Light Emission </strong> <br>
+                      <strong>Heng Guo</strong>, <a href="http://alumni.media.mit.edu/~shiboxin/">Boxin Shi</a>, Michael Waechter, <a href="http://www-infobiz.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>. <br>
+                        In <em>Meeting on Image Recognition and Understanding </em> (<strong>MIRU 2020</strong>). (Best Student Paper) <br>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <img width=320 src="images/TCI2018.PNG" border="3">
+                  	</td>
+                    <td align="left"><strong>View-Consistent MeshFlow for Stereoscopic Video Stabilization </strong> <br>
+                      <strong>Heng Guo</strong>, <a href="http://www.liushuaicheng.org/">Shuaicheng Liu</a>, Shuyuan Zhu, Heng Tao Shen, Bing Zeng. <br>
+                        In <em>IEEE Transactions on Computational Imaging </em> (<strong>TCI 2018</strong>). <br>
+                        [<a href="paper/StereoStabilization-TCI-2018.pdf">Paper</a>]
+						[<a href="https://youtu.be/ElmR6cOZF-8">Video</a>]
+					</td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <img width=320 src="images/ICIP2016.jpg" border="3">
+                    </td>
+					<td><strong>Joint Bundled Camera Paths for StereoScopic Video Stabilization </strong> <br>
+                        <strong>Heng Guo</strong>, <a href="http://www.liushuaicheng.org/">Shuaicheng Liu</a>, Shuyuan Zhu, Bing Zeng<br>
+                        In <em>International Conference on Image Processing </em> (<strong>ICIP 2016</strong>) (Oral)<br>
+                        [<a href="http://www.liushuaicheng.org/ICIP2016/stabilization/StereoStb.pdf">Paper</a>]   [<a href="project/ICIP2016/index.html">Website</a>]<br>
+					</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img width=320 src="images/TIP2016.jpg" border="3">
+                  	</td>
+                    <td><strong>Joint Video Stitching and Stabilization from Moving Cameras </strong> <br>
+                      <strong>Heng Guo</strong>, <a href="http://www.liushuaicheng.org/">Shuaicheng Liu</a>, Tong He, Shuyuan Zhu, Bing Zeng, Moncef Gabbouj.<br>
+                    In <em>IEEE Transactions on Image Processing</em> (<strong>TIP 2016</strong>) <br>
+                    [<a href="http://www.liushuaicheng.org/TIP/VideoStitching2016/tip16.pdf">Paper</a>]    [<a href="http://www.liushuaicheng.org/TIP/VideoStitching2016/index.html">Website</a>]</td>
+                </tr>
+
+            </table>
+        </font>
+			
+<p>
+	<hr size="1" align="left" noshade>
+<p>
+	
+<table border=0 width=250 align=center>
+	<tbody>
+		<tr>
+			<td align="center" width="250px">
+				<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=HpCmnzeCJi8rrXVVBPiyRQw_54PhDvHIQRWoVNmbR4g&cl=ffffff&w=a"></script>
+			</td>
+		<tr>
+	</tbody>
+</table>
+
+
+</body>
+</html>
