@@ -21,7 +21,7 @@
 %\usepackage{zh_CN-Adobefonts_external} 
 \usepackage{linespacing_fix}
 \input{glyphtounicode}
-
+\usepackage{graphicx}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -107,11 +107,21 @@
 
 \begin{document}
 
-\begin{center}
-    \textbf{\Huge \scshape  Heng Guo} \\ \vspace{4pt}
-    \small 070-1322-8279 $|$ \href{mailto:heng.guo@ist.osaka-u.ac.jp}{\underline{heng.guo@ist.osaka-u.ac.jp}} $|$ 
-    \href{https://gh-home.github.io/}{\underline{Homepage}}
-\end{center}
+\begin{minipage}[c]{0.9\textwidth}
+	\begin{center}
+		\textbf{\Huge \scshape  Heng Guo} \\ \vspace{18pt}
+		(086)18582521993 $|$ \href{mailto:heng.guo@ist.osaka-u.ac.jp}{\underline{heng.guo@ist.osaka-u.ac.jp}} $|$ 
+		\href{https://scholar.google.com/citations?user=HKu6gF4AAAAJ&hl=zh-CN}{\underline{Google Scholar}} $|$ 
+	\end{center}
+\end{minipage}
+\hspace{-2em}
+\vspace{-0.5em}
+\begin{minipage}[r]{0.06\textwidth}
+	\centering
+	\raisebox{3em}{\hspace{0.2em}\includegraphics[width = 1.5cm]{homepage}}\\
+	\vspace{-3.5em}
+	\href{https://gh-home.github.io/}{\underline{Homepage}}
+\end{minipage}
 
 
 %-----------EDUCATION-----------
@@ -125,25 +135,32 @@
       {Master of Signal Processing}{Aug. 2018 -- Sep. 2015}
    \resumeSubheading
  		{Osaka University}{Osaka, Japan}
- 		{Doctor of Computer Science}{Present -- Sep. 2018}
+ 		{Doctor of Computer Science}{Apr. 2022 -- Sep. 2018}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+	  \resumeSubheading
+	  {Specially Appointed Assistant Professor}{May. 2022 -- Present}
+	  {Osaka University}{Osaka, Japan}
+	  
     \resumeSubheading
-      {Research Assistant}{Oct. 2018 -- Present}
+      {Research Assistant}{Oct. 2018 -- Apr. 2022}
       {Osaka University}{Osaka, Japan}
       
 % -----------Multiple Positions Heading-----------
     \resumeSubheading
+	{Research Intern}{Aug. 2021 -- Oct. 2021}
+	{{\rm OPPO} Japan Research Center.}{Yokohama, Japan}
+    \resumeSubheading
      {Research Intern}{June 2016 -- Jan. 2017}
 	{AI lab of Qihoo 360 Technology Co. Ltd.}{Beijing, China}
-     \resumeItemListStart
-		\resumeItem{Propose a real-time video stabilization algorithm for user-captured videos with 0.5s delay.}
-		\resumeItem{Implement an android application for real-time video stabilization.}
-     \resumeItemListEnd
+%     \resumeItemListStart
+%		\resumeItem{Propose a real-time video stabilization algorithm for user-captured videos with 0.5s delay.}
+%		\resumeItem{Implement an android application for real-time video stabilization.}
+%     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -168,14 +185,15 @@
    {The 2nd Prize of National Undergraduate Electronics Design Contest}{Sep. 2013}
    \resumeProjectHeading
    {People's Scholarship (Top 15\%)}{2011 \& 2012 \& 2013}
-   \resumeProjectHeading
-   {Outstanding Individual in Social Practice}{Sep. 2012}
+%   \resumeProjectHeading
+%   {Outstanding Individual in Social Practice}{Sep. 2012}
     \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Publication}
 %\renewcommand\labelenumi{(\theenumi)}
 \begin{enumerate}[label={[\arabic*]}]
+	\item Guo Heng, et al. ``Multispectral Photometric Stereo for Spatially-Varying Spectral Reflectances" International Journal of Computer Vision. (\textbf{IJCV 2022}). 
 	\item Guo Heng, et al. ``Patch-based uncalibrated photometric stereo under natural illumination" 
 	IEEE Transactions on Pattern Analysis and Machine Intelligence. (\textbf{TPAMI 2021}). 
 	\item Guo Heng, et al. ``Multispectral Photometric Stereo for Spatially-Varying Spectral Reflectances: A well posed problem?" IEEE Conference on Computer Vision and Pattern Recognition. (\textbf{CVPR 2021}). 
@@ -183,18 +201,19 @@
 	\item Guo Heng, et al. ``Joint video stitching and stabilization from moving cameras." IEEE Transactions on Image Processing (\textbf{TIP 2016}).
 	\item Guo Heng, et al. ``View-consistent meshflow for stereoscopic video stabilization." IEEE Transactions on Computational Imaging (\textbf{TCI 2018}).
 	\item Guo Heng, et al. ``Joint bundled camera paths for stereoscopic video stabilization." IEEE International Conference on Image Processing (\textbf{ICIP 2016 Oral}).
-	\item Guo Heng, et al. ``Multispectral Photometric Stereo for Spatially-Varying Spectral Reflectances" International Journal of Computer Vision. (IJCV minor revision). 
+	\item Guo Heng, et al. ``Parametric Near-light Photometric Stereo" IEEE Conference on Computer Vision and Pattern Recognition. (ECCV 2022 under review). 
+	\item Guo Heng, et al. ``NeuralMPS: Multispectral Photometric Stereo for Non-lambertian Spectral Reflectance" IEEE Conference on Computer Vision and Pattern Recognition. (ECCV 2022 under review). 
 \end{enumerate}
 
 %
 %-----------PROGRAMMING SKILLS-----------
-\section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Program language}{: Java, Python, C/C++} \\
-     \textbf{Certificacts}{: TOEFL (95), CET-6 (527)} \\
-    }}
- \end{itemize}
+%\section{Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%    \small{\item{
+%     \textbf{Program language}{: Java, Python, C/C++} \\
+%     \textbf{Certificacts}{: TOEFL (95), CET-6 (527)} \\
+%    }}
+% \end{itemize}
 
 
 %-------------------------------------------
