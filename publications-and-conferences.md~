@@ -1,9 +1,0 @@
----
-layout: page
-title: Publications and Conferences
-permalink: /publications-and-conferences/
----
-
-### 2017
-
-**Adrián Núñez-Marcos**, Gorka Azkune, Ignacio Arganda-Carreras (2017). [Vision-Based Fall Detection with Convolutional Neural Networks](https://www.hindawi.com/journals/wcmc/2017/9474806/). In *Wireless Communications and Mobile Computing, Volume 2017 (2017)*. [Code](ttps://github.com/AdrianNunez/Fall-Detection-with-CNNs-and-Optical-Flow).
