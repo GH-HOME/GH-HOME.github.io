@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heng's Homepage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left-section {
+            max-width: 60%;
+        }
+        .left-section h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .left-section p {
+            margin: 4px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #c0392b;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .portrait {
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            height: 310px;
+            display: block;
+            margin-left: auto;
+            margin-right: 0;
+            margin-top: 28px;
+        }
+        .right-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            width: 35%;
+            padding-left: 20px;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .news-list li {
+            margin-bottom: 8px;
+        }
+        .pub-table {
+            width: 100%;
+            border-spacing: 20px;
+        }
+        .pub-table td {
+            vertical-align: top;
+        }
+        .pub-img {
+            width: 320px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+    <div class="left-section">
+        <!-- <img src="portrait/logo_bupt.png" width="160" alt="BUPT Logo"> -->
+        <h1>Heng Guo 郭亨</h1>
+        <p><strong>Specially Appointed Researcher （特聘研究员）</strong></p>
+        <p>PRIS Lab, School of Artificial Intelligence</p>
+        <p>Beijing University of Posts and Telecommunications</p>
+        <p>Email: guoheng [at] bupt.edu.cn</p>
+        <p>
+            <a href="https://github.com/GH-HOME">[GITHUB]</a> 
+            <a href="CV/CV_en.pdf">[CV]</a> <a href="CV/cv_cn.pdf">[简历]</a> 
+            <a href="https://scholar.google.com/citations?user=HKu6gF4AAAAJ">[Google Scholar]</a>
+        </p>
+        <a href="joinus.html" class="cta-button">➤ Join Us at BUPT</a>
+    </div>
+    <div class="right-section">
+        <img src="portrait/portrait.jpg" class="portrait" alt="Portrait">
+    </div>
+</header>
+
+        <hr>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I received my Ph.D. (Oct. 2018 - Mar. 2022) from Osaka University under the supervision of <a href="http://www-infobiz.ist.osaka-u.ac.jp/en/member/matsushita/">Prof. Yasuyuki Matsushita</a> and <a href="https://camera.pku.edu.cn/People.htm">Prof. Boxin Shi</a>. Previously, I obtained my Master and Bachelor degrees in 2018 and 2015 from UESTC, supervised by Prof. Bing Zeng and <a href="http://www.liushuaicheng.org">Prof. Shuaicheng Liu</a>. My research interests include computational photography and computer vision.</p>
+        </section>
+
+        <section>
+            <h2>News</h2>
+            <div style="height: 120px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; background-color: #fdfdfd;">
+                <ul class="news-list" style="margin: 0; padding-left: 20px;">
+                    <li><strong>[2025/09]</strong> One paper is accepted by NeurIPS 2025!</li>
+                    <li><strong>[2025/08]</strong> One paper is accepted by TMM!</li>
+                    <li><strong>[2025/06]</strong> Three papers are accepted by ICCV 2025!</li>
+                    <li><strong>[2025/02]</strong> Three papers are accepted by CVPR 2025!</li>
+                    <li><strong>[2024/10]</strong> One paper is accepted by NeurIPS 2024!</li>
+                    <li><strong>[2024/04]</strong> One paper is accepted by ACM MM 2024!</li>
+                    <li><strong>[2024/02]</strong> Two papers are accepted by CVPR 2024!</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Publications</h2>
+            <!-- Publication list starts here -->
+            <!-- You can keep the same publication table format or switch to div cards -->
+            <!-- Example below is simplified for readability -->
+            <table class="pub-table">
+                    <tr>
+                        <td><img src="project/ICCV25/PA.jpg" class="pub-img"></td>
+                        <td>
+                            <strong>Self-Supervised Selective-Guided Diffusion Model for Old-Photo Face Restoration</strong><br>
+                            Wenjie Li, Xiangyi Wang, <strong>Heng Guo</strong>#, Guangwei Gao, Zhanyu Ma<br>
+                            <em>NeurIPS 2025 </em><br>
+                            [<a href="https://neurips.cc/virtual/2025/poster/115678">Paper</a>] [<a href="#">Code</a>]
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="project/ICCV25/PA.jpg" class="pub-img"></td>
+                        <td>
+                            <strong>PolarAnything: Diffusion-based Polarimetric Image Synthesis</strong><br>
+                            Kailong Zhang, Youwei Lyu, <strong>Heng Guo</strong>#, Si Li, Zhanyu Ma, Boxin Shi<br>
+                            <em>ICCV 2025 <span style="color:crimson; font-weight:bold;">(Highlight)</span></em><br>
+                            [<a href="https://arxiv.org/abs/2507.17268">Paper</a>] [<a href="https://github.com/PRIS-CV/PolarAnything">Code</a>]
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="project/ICCV25/PolGS.jpg" class="pub-img"></td>
+                        <td>
+                            <strong>PolGS: Polarimetric Gaussian Splatting for Fast Reflective Surface Reconstruction</strong><br>
+                            Yufei Han, Bowen Tie, <strong>Heng Guo</strong>#, Youwei Lyu, Si Li#, Boxin Shi, Yunpeng Jia, Zhanyu Ma<br>
+                            <em>ICCV 2025</em><br>
+                            [<a href="https://arxiv.org/abs/2509.19726">Paper</a>] [<a href="https://github.com/PRIS-CV/PolGS">Code</a>]
+                        </td>
+                    </tr>
+  
+                    <tr>
+                        <td><img src="project/ICCV25/PNF.jpg" class="pub-img"></td>
+                        <td>
+                            <strong>Polarimetric Neural Field with Unified Complex-Valued Wavefunction</strong><br>
+                            Chu Zhou, Yixin Yang, Junda Liao, <strong>Heng Guo</strong>, Boxin Shi, Imari Sato<br>
+                            <em>ICCV 2025</em><br>
+<<<<<<< HEAD
+                            [<a href="https://drive.google.com/file/d/1oLdI0-glyjNGMgGb-gVvCIMmQA8c-oDf/view?usp=sharing">Paper</a>] [<a href="[<a href="https://drive.google.com/file/d/1oLdI0-glyjNGMgGb-gVvCIMmQA8c-oDf/view?usp=sharing">Supp</a>] [<a href="https://github.com/fourson/Polarimetric-Neural-Field-via-Unified-Complex-Valued-Wave-Representation/tree/master">Code</a>]
+=======
+                            [<a href="https://drive.google.com/file/d/1oLdI0-glyjNGMgGb-gVvCIMmQA8c-oDf/view?usp=drive_link">Paper</a>] [<a href="#">Code</a>]
+>>>>>>> 9e63091f1be063d6611f90f53104e9da4272652e
+                        </td>
+                    </tr>
+
+                        <tr>
+                    <td><img src="project/CVPR25/PMNI.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>PMNI: Pose-free Multi-view Normal Integration for Reflective and Textureless Surface Reconstruction</strong><br>
+                        Mingzhi Pei, Xu Cao, Xiangyi Wang, <strong>Heng Guo</strong>#, Zhanyu Ma<br>
+                        <em>CVPR 2025</em><br>
+                        [<a href="https://arxiv.org/abs/2504.08410">Paper</a>] [<a href="https://github.com/pmz-enterprise/PMNI">Code</a>] [<a href="https://www.youtube.com/watch?v=hLIZG24m1Wo">Video</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/CVPR25/PIDSR.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>PIDSR: Complementary Polarized Image Demosaicing and Super-Resolution</strong><br>
+                        Shuangfan Zhou, Chu Zhou, Youwei Lyu, <strong>Heng Guo</strong>#, Zhanyu Ma, Boxin Shi, Imari Sato<br>
+                        <em>CVPR 2025</em><br>
+                        [<a href="https://arxiv.org/html/2504.07758v1">Paper</a>] [<a href="https://github.com/PRIS-CV/PIDSR">Code</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/CVPR25/MFogHub.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>MFogHub: Bridging Multi-Regional and Multi-Satellite Data for Global Marine Fog Detection and Forecasting</strong><br>
+                        Mengqiu Xu, Kaixin Chen, <strong>Heng Guo</strong>, Yixiang Huang, Ming Wu, Zhenwei Shi, Chuang Zhang, Jun Guo<br>
+                        <em>CVPR 2025</em><br>
+                        [<a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xu_MFogHub_Bridging_Multi-Regional_and_Multi-Satellite_Data_for_Global_Marine_Fog_CVPR_2025_paper.pdf">Dataset</a>] [<a href="https://github.com/kaka0910/MFogHub">Code</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/NeurIPS24/nips24.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>SfPUEL: Shape from Polarization under Unknown Environment</strong><br>
+                        Youwei Lyu*, <strong>Heng Guo</strong>*, Kailong Zhang, Si Li, Boxin Shi<br>
+                        <em>NeurIPS 2024</em><br>
+                        [<a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/b0313c2f4501a81d0e0d4a1e8fbf4995-Paper-Conference.pdf">Paper</a>] [<a href="https://neurips.cc/virtual/2024/poster/93377">Project page</a>] [<a href="https://github.com/YouweiLyu/SfPUEL">Code</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/ACMMM24/acmmm.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>Efficient Face Super-Resolution via Wavelet-Based Feature Enhancement Network</strong><br>
+                        Li Wenjie, <strong>Heng Guo</strong>#, Xuannan Liu, Kongming Liang, Jiani Hu, Zhanyu Ma, Jun Guo<br>
+                        <em>ACM MM 2024</em><br>
+                        [<a href="https://arxiv.org/pdf/2407.19768">Paper</a>] [<a href="https://github.com/PRIS-CV/WFEN/tree/main">Code</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/CVPR24/guo/DiLiGenRT.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>DiLiGenRT: A Photometric Stereo Dataset with Quantified Roughness and Translucency</strong><br>
+                        <strong>Heng Guo</strong>*, Jieji Ren*, Feishi Wang*, Mingjun Ren, Boxin Shi, Yasuyuki Matsushita<br>
+                        <em>CVPR 2024</em><br>
+                        [<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Guo_DiLiGenRT_A_Photometric_Stereo_Dataset_with_Quantified_Roughness_and_Translucency_CVPR_2024_paper.pdf">Paper</a>] [<a href="https://photometricstereo.github.io/diligentrt.html">Project page</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/CVPR24/han/NeRSP.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>NeRSP: Neural 3D Reconstruction for Reflective Objects with Sparse Polarized Images</strong><br>
+                        Yufei Han, <strong>Heng Guo</strong>#, Koki Fukai, Hiroaki Santo, Boxin Shi, Fumio Okura, Zhanyu Ma, Yunpeng Jia<br>
+                        <em>CVPR 2024</em><br>
+                        [<a href="https://arxiv.org/abs/2406.07111">Paper</a>] [<a href="https://yu-fei-han.github.io/NeRSP-project/">Project page</a>] [<a href="https://github.com/PRIS-CV/NeRSP">Code</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/ICCV23/chen/teaser-min.png" class="pub-img"></td>
+                    <td>
+                        <strong>ReLeaPS: Reinforcement Learning-based Illumination Planning for Generalized Photometric Stereo</strong><br>
+                        Jun Hoong Chan, Bohan Yu, <strong>Heng Guo</strong>, Jieji Ren, Zongqing Lu, Boxin Shi<br>
+                        <em>ICCV 2023</em><br>
+                        [<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chan_ReLeaPS__Reinforcement_Learning-based_Illumination_Planning_for_Generalized_Photometric_Stereo_ICCV_2023_paper.pdf">Paper</a>] [<a href="https://jhchan0805.github.io/ReLeaPS/">Project page</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/ICCV23/wang/teaser-min.png" class="pub-img"></td>
+                    <td>
+                        <strong>DiLiGenT-Pi: Photometric Stereo for Planar Surfaces with Rich Details Benchmark Dataset and Beyond</strong><br>
+                        Feishi Wang*, Jieji Ren*, <strong>Heng Guo</strong>*, Mingjun Ren, Boxin Shi<br>
+                        <em>ICCV 2023</em><br>
+                        [<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_DiLiGenT-Pi_Photometric_Stereo_for_Planar_Surfaces_with_Rich_Details_-_ICCV_2023_paper.pdf">Paper</a>] [<a href="https://photometricstereo.github.io/diligentpi.html">Project page</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/ICCP23/Makabe/teaser-min.png" class="pub-img"></td>
+                    <td>
+                        <strong>Near-light Photometric Stereo with Symmetric Lights</strong><br>
+                        Lilika Makabe, <strong>Heng Guo</strong>, Hiroaki Santo, Fumio Okura, Yasuyuki Matsushita<br>
+                        <em>ICCP 2023</em><br>
+                        [<a href="project/ICCP23/Makabe/paper.pdf">Paper</a>] [<a href="project/ICCP23/Makabe/supp.pdf">Supp</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/ICCP23/Li/teaser-min.png" class="pub-img"></td>
+                    <td>
+                        <strong>Learning to Synthesize Photorealistic Dual-pixel Images from RGBD frames</strong><br>
+                        Feiran Li*, <strong>Heng Guo</strong>*, Hiroaki Santo, Fumio Okura, Yasuyuki Matsushita<br>
+                        <em>ICCP 2023</em><br>
+                        [<a href="project/ICCP23/Li/paper.pdf">Paper</a>] [<a href="https://github.com/SILI1994/Neural-Dual-Pixel-Simulator">Code and dataset</a>]
+                    </td>
+                </tr>
+                            <tr>
+                    <td><img src="project/ICNIDC/teaser-min.png" class="pub-img"></td>
+                    <td>
+                        <strong>Neural BRDF Plugin for Unsupervised Photometric Stereo</strong><br>
+                        <strong>Heng Guo</strong>, Boxin Shi, Yasuyuki Matsushita<br>
+                        <em>IC-NIDC 2023</em><br>
+                        [<a href="project/ICNIDC/paper.pdf">Paper</a>] [<a href="project/ICNIDC/award.png">Award</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/IJCAI23/teaser-min.png" class="pub-img"></td>
+                    <td>
+                        <strong>Non-Lambertian Multispectral Photometric Stereo via Spectral Reflectance Decomposition</strong><br>
+                        Jipeng Lv, <strong>Heng Guo</strong>#, Guanying Chen, Jinxiu Liang, Boxin Shi<br>
+                        <em>IJCAI 2023</em><br>
+                        [<a href="https://www.ijcai.org/proceedings/2023/0139.pdf">Paper</a>] [<a href="https://github.com/Github-Tree-0/NeuralMPS">Code and dataset</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/TPAMI22/Thumb.gif" class="pub-img"></td>
+                    <td>
+                        <strong>Edge-preserving Near-light Photometric Stereo with Neural Surfaces</strong><br>
+                        <strong>Heng Guo</strong>, Hiroaki Santo, Boxin Shi, Yasuyuki Matsushita<br>
+                        <em>TPAMI 2022 (Pre-print)</em><br>
+                        [<a href="https://arxiv.org/abs/2207.04622">Paper</a>] [<a href="https://github.com/GH-HOME/EPPS">Code</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/IJCV22/teaser.png" class="pub-img"></td>
+                    <td>
+                        <strong>Multispectral Photometric Stereo for Spatially-Varying Spectral Reflectances</strong><br>
+                        <strong>Heng Guo</strong>, Fumio Okura, Boxin Shi, Takuya Funatomi, Yasuhiro Mukaigawa, Yasuyuki Matsushita<br>
+                        <em>IJCV 2022</em><br>
+                        [<a href="project/IJCV22/paper.pdf">Paper</a>] [<a href="https://youtu.be/hUsMz5dCHnE">Video</a>] [<a href="https://drive.google.com/file/d/1OLY655RT7Eroyr6UZcg97DkJrRRCURHZ/view?usp=sharing">Dataset</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/TPAMI21/teaser2.png" class="pub-img"></td>
+                    <td>
+                        <strong>Patch-based Uncalibrated Photometric Stereo under Natural Illumination</strong><br>
+                        <strong>Heng Guo</strong>, Zhipeng Mo, Boxin Shi, Feng Lu, Sai-Kit Yeung, Ping Tan, Yasuyuki Matsushita<br>
+                        <em>TPAMI 2021</em><br>
+                        [<a href="project/TPAMI21/paper.pdf">Paper</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/CVPR21/Thumbnail.gif" class="pub-img"></td>
+                    <td>
+                        <strong>Multispectral Photometric Stereo for Spatially-Varying Spectral Reflectances: A Well-Posed Problem?</strong><br>
+                        <strong>Heng Guo</strong>, Fumio Okura, Boxin Shi, Takuya Funatomi, Yasuhiro Mukaigawa, Yasuyuki Matsushita<br>
+                        <em>CVPR 2021</em><br>
+                        [<a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Guo_Multispectral_Photometric_Stereo_for_Spatially-Varying_Spectral_Reflectances_A_Well_Posed_CVPR_2021_paper.pdf">Paper</a>] [<a href="https://youtu.be/jot_BPFUJko">Video</a>] [<a href="https://github.com/GH-HOME/MultispectralPS">Code</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/MIRU20/MIRU2020-min.png" class="pub-img"></td>
+                    <td>
+                        <strong>Self-calibrating Near-light Photometric Stereo under Anisotropic Light Emission</strong><br>
+                        <strong>Heng Guo</strong>, Boxin Shi, Michael Waechter, Yasuyuki Matsushita<br>
+                        <em>MIRU 2020 (Best Student Paper)</em><br>
+                        [<a href="project/MIRU20/MIRU2020.pdf">Paper</a>] [<a href="project/MIRU20/award_low.pdf">Award</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/TCI18/TCI2018.PNG" class="pub-img"></td>
+                    <td>
+                        <strong>View-Consistent MeshFlow for Stereoscopic Video Stabilization</strong><br>
+                        <strong>Heng Guo</strong>, Shuaicheng Liu, Shuyuan Zhu, Heng Tao Shen, Bing Zeng<br>
+                        <em>IEEE Transactions on Computational Imaging, 2018</em><br>
+                        [<a href="paper/StereoStabilization-TCI-2018.pdf">Paper</a>] [<a href="https://youtu.be/ElmR6cOZF-8">Video</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/ICIP16/ICIP2016.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>Joint Bundled Camera Paths for Stereoscopic Video Stabilization</strong><br>
+                        <strong>Heng Guo</strong>, Shuaicheng Liu, Shuyuan Zhu, Bing Zeng<br>
+                        <em>ICIP 2016 (Oral)</em><br>
+                        [<a href="http://www.liushuaicheng.org/ICIP2016/stabilization/StereoStb.pdf">Paper</a>]
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="project/TIP16/TIP2016.jpg" class="pub-img"></td>
+                    <td>
+                        <strong>Joint Video Stitching and Stabilization from Moving Cameras</strong><br>
+                        <strong>Heng Guo</strong>, Shuaicheng Liu, Tong He, Shuyuan Zhu, Bing Zeng, Moncef Gabbouj<br>
+                        <em>IEEE Transactions on Image Processing, 2016</em><br>
+                        [<a href="http://www.liushuaicheng.org/TIP/VideoStitching2016/tip16.pdf">Paper</a>]
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <div style="text-align: center; padding: 10px; font-size: 14px; color: gray;">
+            访问量：<span id="busuanzi_value_site_pv">...</span>
+            <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        </div>
+        <footer>
+            &copy; 2025 Heng Guo · Beijing University of Posts and Telecommunications
+        </footer>
+    </div>
+</body>
+</html>
+
