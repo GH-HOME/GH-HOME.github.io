@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>具身智能方向考核任务</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9fafa;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    code {
+      background-color: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95em;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      border: 1px solid #ddd;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed #ccc;
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    .note {
+      background-color: #fffacd;
+      padding: 12px;
+      border-left: 4px solid #ffd32a;
+      margin: 15px 0;
+      font-size: 0.95em;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #7f8c8d;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>具身智能方向考核题目（时限14天）</h1>
+
+  <p><strong>Written by 陈瑞阳。 提交邮箱：</strong><a href="mailto:chenruiyang0225@163.com">chenruiyang0225@163.com</a></p>
+
+  <div class="note">
+    <strong>说明：</strong>请参与考核的同学每日记录完成进度，最终将进度记录与答案提交至上述邮箱。如有问题可通过邮箱联系。
+  </div>
+
+  <!-- 第一部分 -->
+  <div class="section">
+    <h2>一、观看视频并回答基础问题</h2>
+    <p>请观看 <a href="https://www.bilibili.com/video/BV1d5ukedEsi/" target="_blank">[具身智能介绍视频]</a>，学习了解具身智能相关基础知识，并回答以下问题：</p>
+
+    <ol>
+      <li><strong>什么是具身智能？它与传统的人工智能有什么区别？请结合机械臂抓取这个任务具体说明。</strong></li>
+      <li><strong>在具身智能系统中，感知、决策和动作三个模块如何协同工作？</strong></li>
+    </ol>
+  </div>
+
+  <!-- 第二部分 -->
+  <div class="section">
+    <h2>二、阅读论文并回答问题</h2>
+    <p>请阅读以下论文：</p>
+    <ul>
+      <li><a href="https://arxiv.org/abs/2501.18564" target="_blank">SAM2Act</a>（主读）</li>
+      <li><a href="https://arxiv.org/abs/2406.08545" target="_blank">RVT-2</a>（辅助阅读，用于学习基础知识）</li>
+    </ul>
+
+    <p><strong>针对 SAM2Act 论文，回答以下问题：</strong></p>
+    <ol>
+      <li>这篇文章的设定是什么？（输入、输出分别是什么）</li>
+      <li>这篇文章的出发点是什么？（我们有很多前人的工作也在解决上述问题设定，他们的算法存在什么问题？为什么这些问题很重要？）</li>
+      <li>SAM2Act 的核心创新点是什么？</li>
+      <li>为什么要对 SAM2 模型使用 LoRA 进行微调？必要性是什么？</li>
+      <li>这种两阶段设计的必要性是什么？</li>
+    </ol>
+  </div>
+
+  <!-- 第三部分 -->
+  <div class="section">
+    <h2>三、运行 SAM2Act 代码并完成任务</h2>
+    <p>本环节旨在考核学生的实际代码能力，通过复现 SAM2Act 代码，学习云服务器使用、仿真平台操作及复杂环境配置。</p>
+
+    <h3>任务步骤：</h3>
+    <ol>
+      <li>在云服务器平台构建实例（GPU 单卡 4090 即可）。</li>
+      <li>在云服务器中按照 <a href="https://github.com/sam2act/sam2act" target="_blank">SAM2Act 代码仓库</a> 中的 <code>README.md</code> 步骤配置环境。</li>
+      <li>配置完成后，完成 Evaluation 中的 <strong>Evaluate SAM2Act on RLBench</strong> 任务，并提交生成的 <code>eval_results.csv</code> 表格。</li>
+    </ol>
+
+    <div class="note">
+      <strong>提示：</strong>
+      <ul>
+        <li>具身智能任务的环境配置通常非常复杂，涉及多个模块，请保持耐心，锻炼问题解决与信息检索能力。</li>
+        <li>若遇到问题，可参考：
+          <ul>
+            <li>SAM2Act 的 README 最后的 <strong>Common Questions</strong> 部分</li>
+            <li>GitHub 仓库的 <strong>Issues</strong> 页面</li>
+            <li>RVT、RVT-2 等前序工作的 GitHub Issues</li>
+          </ul>
+        </li>
+        <li>善用 Google 搜索或 ChatGPT 等大语言模型（LLM）工具辅助解决问题。</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 具身智能考核项目组 | 提交至邮箱：<a href="mailto:chenruiyang0225@163.com">chenruiyang0225@163.com</a>
+  </footer>
+
+</body>
+</html>
