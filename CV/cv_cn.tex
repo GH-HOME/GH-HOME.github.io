@@ -1,5 +1,5 @@
 % !TEX program = xelatex
-\documentclass[UTF8]{ctexart}
+\documentclass[UTF8,fontset=fandol]{ctexart}
 %\documentclass[A4, 11pt, UTF8]{ctexart}
 \usepackage[T1]{fontenc}
 %-------------------------
@@ -27,6 +27,9 @@
 \usepackage{iftex}
 \usepackage{marvosym}
 \usepackage{tikz}
+\xeCJKsetup{AutoFallBack=true}
+\setCJKfallbackfamilyfont{\CJKrmdefault}[BoldFont=Songti SC Bold]
+  {Songti SC Light,Hiragino Mincho ProN}
 
 
 %----------FONT OPTIONS----------
@@ -221,6 +224,9 @@
 	%\renewcommand\labelenumi{(\theenumi)}
 	($*$ Equal contribution, $\dagger$ Corresponding author.)
 	\input{publication}
+
+	\section{\textit{\textbf{授权发明专利}}}
+	\input{patent}
 	
 	
 	\section{\textit{\textbf{获奖荣誉}}}
@@ -262,7 +268,7 @@
 		\item 论坛主席： 第24期CCF-CV视界无限系列研讨会
 		\item 2025 CSIG青年科学家会议智能科学成像论坛召集人
 		\item 2025 CAA人工智能与机器人教育大会组织主席
-		\item  \href{https://gakkai-web.net/fit/program_web/event_TCS4-2.html}{\underline{论坛报告人}}： 第22届日本信息科学与技术论坛 (情報科学技術フォーラム) 
+		\item  \href{https://gakkai-web.net/fit/program_web/event_TCS4-2.html}{\underline{论坛报告人}}： 第22届日本信息科学与技术论坛 ({\CJKfontspec{Hiragino Mincho ProN}情報科学技術フォーラム})
 	\end{itemize}
 
 
